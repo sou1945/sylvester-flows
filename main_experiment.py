@@ -97,6 +97,7 @@ np.random.seed(args.manual_seed)
 if args.cuda:
     # gpu device number
     torch.cuda.set_device(args.gpu_num)
+    assert(False)
 
 
 kwargs = {'num_workers': 0, 'pin_memory': True} if args.cuda else {}
